@@ -13,7 +13,7 @@
 		if (file_put_contents($new_file, base64_decode(str_replace($result[1], '', $base64_image_content)))){
 			echo json_encode(["status"=>'success',"url"=>$new_file]);
 		}else{
-			echo json_encode(["status"=>'error',"describ"=>'图片保存失败');
+			echo json_encode(["status"=>'error',"describ"=>'图片保存失败']);
 		}
 }
 
